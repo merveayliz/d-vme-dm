@@ -86,21 +86,17 @@
 </head>
 <body class="bg-brandBg text-white font-inter overflow-x-hidden selection:bg-brandRed selection:text-white pb-16 md:pb-0">
 
-    <!-- Custom Cursor -->
     <div id="custom-cursor" class="fixed w-5 h-5 bg-brandRed rounded-full pointer-events-none z-[99999] mix-blend-difference transition-transform duration-100 -translate-x-1/2 -translate-y-1/2"></div>
 
-    <!-- Intro Stage -->
     <div id="intro-stage" class="fixed inset-0 z-[10000] flex items-center justify-center bg-black">
         <div class="intro-bg block md:hidden absolute inset-0 bg-cover bg-center transition-all duration-1000" style="background-image: url('img/pp.jpg');"></div>
         <div class="intro-bg hidden md:block absolute inset-0 bg-cover bg-center transition-all duration-1000" style="background-image: url('img/pp.png');"></div>
         <div class="intro-title relative font-syncopate text-3xl md:text-6xl tracking-[20px] text-white z-10 animate-pulse-text">Ayliz</div>
     </div>
 
-    <!-- Main Navigation -->
     <nav id="main-nav" class="fixed top-0 w-full px-[5%] py-6 flex justify-between items-center z-[5000] backdrop-blur-md bg-black/50 opacity-0 transition-opacity duration-700 border-b border-neutral-900/50">
         <a href="#" class="font-cinzel font-black text-xl text-white tracking-[4px]">PRIVATE STUDIO</a>
         
-        <!-- PC Masaüstü Navigasyon -->
         <div class="hidden md:flex items-center gap-8 text-xs tracking-widest uppercase">
             <a href="#galeri" data-tr="Galeri" data-en="Gallery" class="hover:text-brandRed transition-colors">Galeri</a>
             <a href="#uzmanlar" data-tr="Uzmanlar" data-en="Artists" class="hover:text-brandRed transition-colors">Uzmanlar</a>
@@ -108,7 +104,6 @@
             <a href="#randevu" data-tr="Randevu" data-en="Booking" class="hover:text-brandRed transition-colors">Randevu</a>
         </div>
 
-        <!-- TR / EN Dil Değiştirme Butonu -->
         <button onclick="toggleLanguage(this)" 
                 class="border border-brandRed/50 hover:border-brandRed text-white px-3 py-1.5 text-xs font-semibold tracking-widest uppercase bg-neutral-900/80 rounded transition-all duration-300 hover:scale-105 active:scale-95 flex items-center gap-1">
             <span id="current-lang">TR</span>
@@ -118,7 +113,6 @@
     
     <hr class="custom-divider">
      
-    <!-- Hero Section -->
     <section class="hero-padding lg:min-h-screen flex items-center px-[5%] lg:px-[10%] lg:pt-28 lg:pb-16 relative">
         <div class="grid grid-cols-2 lg:grid-cols-12 w-full items-center gap-4 lg:gap-10">
             <div class="col-span-1 lg:col-span-7 opacity-0 transition-all duration-1000" id="hero-title">
@@ -148,7 +142,6 @@
 
     <hr class="custom-divider">
 
-    <!-- Uzmanlar Bölümü -->
     <section id="uzmanlar" class="profile-padding lg:py-24 px-[5%] lg:px-[10%] grid grid-cols-2 md:grid-cols-2 gap-4 lg:gap-24">
         <div class="profile-container text-center flex flex-col items-center group">
             <div class="circle-frame relative w-[110px] h-[110px] sm:w-[180px] sm:h-[180px] lg:w-[300px] lg:h-[300px] mb-4 lg:mb-8 spin-frame">
@@ -179,7 +172,6 @@
 
     <hr class="custom-divider">
 
-    <!-- Galeri Bölümü -->
     <section id="galeri" class="py-24 px-[5%] bg-neutral-950">
         <span data-tr="// SEÇİLMİŞ ÇALIŞMALAR" data-en="// SELECTED WORKS" class="text-brandRed uppercase text-center block tracking-[8px] mb-12 text-sm font-syncopate">// SEÇİLMİŞ ÇALIŞMALAR</span>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-[1200px] mx-auto">
@@ -236,7 +228,6 @@
 
     <hr class="custom-divider">
 
-    <!-- Fiyat Bölümü -->
     <section id="fiyat" class="py-24 px-[5%] lg:px-[10%] bg-black">
         <span data-tr="// FİYAT & RANDEVU" data-en="// PRICING & BOOKING" class="text-brandRed uppercase text-center block tracking-[8px] mb-12 text-sm font-syncopate">// FİYAT & RANDEVU</span>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto items-stretch">
@@ -286,7 +277,6 @@
 
     <hr class="custom-divider">
 
-    <!-- Bilgi & Eğitim -->
     <section class="py-24 px-[5%] lg:px-[10%] bg-neutral-950 border-t border-neutral-900">
         <span data-tr="// BİLGİ & EĞİTİM" data-en="// INFO & ACADEMY" class="text-brandRed uppercase text-center block tracking-[8px] mb-12 text-sm font-syncopate">// BİLGİ & EĞİTİM</span>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1200px] mx-auto">
@@ -319,12 +309,10 @@
 
     <hr class="custom-divider">
 
-    <!-- İletişim & Randevu -->
     <section id="randevu" class="py-24 px-[5%] lg:px-[10%] bg-black">
         <span data-tr="// İLETİŞİM & RANDEVU" data-en="// CONTACT & BOOKING" class="text-brandRed uppercase text-center block tracking-[8px] mb-12 text-sm font-syncopate">// İLETİŞİM & RANDEVU</span>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-[1200px] mx-auto">
             
-            <!-- Sol Kart: İletişim Bilgileri -->
             <div class="bg-neutral-900/40 border border-neutral-800 p-8 flex flex-col justify-between">
                 <div>
                     <h3 data-tr="STUDİO BİLGİLERİ" data-en="STUDIO INFORMATION" class="font-cinzel text-2xl font-bold text-white mb-6 tracking-wider">STUDİO BİLGİLERİ</h3>
@@ -378,7 +366,6 @@
                 </div>
             </div>
 
-            <!-- Sağ Kart: WhatsApp Otomatik Mesaj Formu -->
             <div class="bg-neutral-900/80 border border-neutral-800 p-8 relative">
                 <h3 data-tr="HIZLI RANDEVU OLUŞTUR" data-en="QUICK BOOKING" class="font-cinzel text-2xl font-bold text-white mb-2 tracking-wider">HIZLI RANDEVU OLUŞTUR</h3>
                 <p data-tr="Formu doldurduğunuzda talebiniz WhatsApp mesajı olarak hazırlanacaktır." data-en="When you fill out the form, your request will be generated as a WhatsApp message." class="text-neutral-400 text-xs mb-6">Formu doldurduğunuzda talebiniz WhatsApp mesajı olarak hazırlanacaktır.</p>
@@ -419,7 +406,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="py-16 px-[10%] bg-black flex flex-col md:flex-row justify-between items-center border-t border-neutral-900 text-xs tracking-widest gap-6 text-neutral-500">
         <div>© 2026 Eren STUDIO. CRAFTED WITH PASSION IN ESKİŞEHİR.</div>
         <div class="flex gap-6">
@@ -429,7 +415,6 @@
         </div>
     </footer>
 
-    <!-- SABİT SAĞ ALT WHATSAPP BUTONU -->
     <a href="https://wa.me/905555555555?text=Merhaba,%20st%C3%BCdyonuz%20hakk%C4%B1nda%20bilgi%20ve%20randevu%20almak%20istiyorum." 
        target="_blank" 
        class="fixed bottom-20 md:bottom-8 right-6 z-[6000] bg-green-600 hover:bg-green-500 text-white p-4 rounded-full shadow-[0_0_25px_rgba(34,197,94,0.5)] transition-all duration-300 hover:scale-110 flex items-center justify-center"
@@ -453,7 +438,6 @@
         </a>
     </div>
 
-    <!-- Scripts -->
     <script>
         lucide.createIcons();
         
@@ -504,7 +488,6 @@
             if(cards) cards.style.transform = `translateY(${scrolled * -0.1}px) perspective(1000px) rotateY(-10deg)`;
         });
 
-        // WhatsApp Form Gönderme Fonksiyonu
         function sendWhatsApp(e) {
             e.preventDefault();
             const phone = "905555555555";
@@ -519,21 +502,15 @@
 
         function toggleLanguage(btn) {
             const langSpan = document.getElementById('current-lang');
-            // Mevcut dil Türkçe mi kontrol et
             const isTurkish = langSpan.innerText === 'TR';
-            
-            // Butondaki göstergeyi çevir
             langSpan.innerText = isTurkish ? 'EN' : 'TR';
 
-            // Sayfadaki data-tr ve data-en attribute'una sahip tüm elementleri çek
             const elements = document.querySelectorAll('[data-tr][data-en]');
             
-            // Tıklamaya göre ilgili dildeki veriyi HTML içine bas
             elements.forEach(el => {
                 el.innerText = isTurkish ? el.getAttribute('data-en') : el.getAttribute('data-tr');
             });
 
-            // Lucide ikonlarının bozulmaması için yeniden yükle
             if (typeof lucide !== 'undefined') {
                 lucide.createIcons();
             }
